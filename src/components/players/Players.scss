@@ -1,6 +1,24 @@
 #players {
   li{
-    color: aqua
-  }
+    &:first-child{
+      color: aqua
+    }
+    &:nth-child(2){
+      color: greenyellow
+    }
+    &:nth-child(3){
+      color: #370361
+    }
     color: hsl(315, 63%, 49%)
-  } 
+  }
+  color: #e5e921
+}  
+
+@media screen and (min-width: 650px){
+  #players{
+    li{
+      color: #044909
+    }
+    color: #044909
+  }
+}
